@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NGD Retro Overdrive — 5-Game Universal App Store Bundle (Mac • iPhone • iPad)</title>
+  <meta name="description" content="5 legendary golden-era arcade genres reimagined at 120Hz with live 1983/1989/1991 8-bit & 16-bit modes. Universal Purchase across Mac, iPhone, and iPad — Save 63% ($12.99 vs $34.95)!">
+  <meta property="og:title" content="NGD Retro Overdrive — 5-Game Universal App Store Bundle">
+  <meta property="og:description" content="Star Viper, Galaxy Swarm, Iron Rails, Mirage Blade & Dino Club — 5 Universal games (15 native apps) for $12.99 USD (Save 63%!). Zero ads, zero IAP.">
+  <meta property="og:image" content="https://ngdgabi.github.io/star-viper/bundle/assets/NGD_RetroBundle_Social_Card_16x9.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      --bg:#060916;
+      --panel:#0f162e;
+      --gold:#f9cf45;
+      --cyan:#38ecff;
+      --emerald:#34f08e;
+      --crimson:#f55666;
+      --purple:#d673ff;
+      --txt:#f8f6ef;
+      --muted:#b7c2df;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:radial-gradient(circle at top,#14193a 0%,#060916 65%); color:var(--txt); line-height:1.6; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; max-width:1120px; margin:0 auto; padding:20px 24px 0; }
+    .brand { font-weight:900; letter-spacing:2px; color:var(--gold); font-size:1rem; }
+    .lang-switch button { background:rgba(255,255,255,.07); border:1px solid var(--gold); color:#fff; font-weight:700; padding:6px 14px; border-radius:999px; cursor:pointer; margin-left:6px; }
+    .lang-switch button.active { background:var(--gold); color:#090d1c; }
+    .wrap { max-width:1120px; margin:0 auto; padding:28px 24px 64px; }
+    .hero { position:relative; border:2px solid var(--gold); border-radius:24px; overflow:hidden; background:#0b1024; box-shadow:0 24px 70px rgba(249,207,69,.18); }
+    .hero-art { width:100%; max-height:430px; object-fit:cover; display:block; opacity:.92; }
+    .hero-body { padding:32px; background:linear-gradient(180deg,rgba(8,12,28,.88),#0b1024); text-align:center; }
+    h1 { font-size:clamp(2rem,4.5vw,3.2rem); margin:0 0 8px; color:var(--gold); letter-spacing:2px; }
+    .lead { max-width:820px; margin:0 auto 22px; color:var(--muted); font-size:1.12rem; }
+    .price-banner { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px; background:rgba(52,240,142,.11); border:2px solid var(--emerald); border-radius:16px; padding:14px 26px; margin-bottom:20px; }
+    .price-now { font-size:2rem; font-weight:900; color:var(--emerald); }
+    .price-old { text-decoration:line-through; color:#9aa6c7; font-size:1.15rem; }
+    .save-tag { background:var(--gold); color:#090d1c; font-weight:900; padding:4px 12px; border-radius:999px; font-size:.9rem; }
+    .pills { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:22px; }
+    .pill { border:1px solid rgba(249,207,69,.55); background:rgba(56,236,255,.1); padding:6px 15px; border-radius:999px; font-size:.88rem; font-weight:700; }
+    .btn-row { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
+    .btn { display:inline-block; padding:12px 22px; border-radius:12px; font-weight:800; text-decoration:none; transition:transform .15s; }
+    .btn:hover { transform:translateY(-2px); }
+    .btn-gold { background:var(--gold); color:#080c1c; }
+    .btn-outline { border:1.5px solid var(--cyan); color:var(--cyan); background:rgba(56,236,255,.08); }
+    .section-title { text-align:center; color:var(--gold); font-size:1.75rem; margin:48px 0 24px; letter-spacing:1px; }
+    .game-list { display:grid; gap:22px; }
+    .game-card { display:grid; grid-template-columns:112px 1fr 300px; gap:22px; align-items:center; background:var(--panel); border:1.5px solid rgba(249,207,69,.32); border-radius:20px; padding:22px; }
+    .game-icon { width:112px; height:112px; border-radius:24px; border:2px solid var(--gold); }
+    .game-meta h3 { margin:0 0 4px; font-size:1.35rem; color:var(--gold); }
+    .era { display:inline-block; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.8rem; color:var(--cyan); margin-bottom:8px; }
+    .game-meta p { margin:0 0 10px; color:var(--muted); font-size:.96rem; }
+    .game-links a { color:var(--emerald); font-weight:700; margin-right:16px; text-decoration:none; font-size:.9rem; }
+    .game-links a:hover { text-decoration:underline; }
+    .game-shot { width:100%; height:178px; object-fit:cover; border-radius:12px; border:1.5px solid rgba(255,255,255,.18); }
+    .value-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px; margin-top:28px; }
+    .vbox { background:var(--panel); border:1px solid rgba(56,236,255,.35); border-radius:16px; padding:22px; }
+    .vbox h4 { margin:0 0 8px; color:var(--cyan); font-size:1.1rem; }
+    footer { text-align:center; margin-top:56px; color:#96a4c8; font-size:.9rem; }
+    footer a { color:var(--gold); text-decoration:none; }
+    [data-lang="hu"] { display:none; }
+    body.hu [data-lang="en"] { display:none; }
+    body.hu [data-lang="hu"] { display:block; }
+    body.hu span[data-lang="hu"], body.hu a[data-lang="hu"] { display:inline-block; }
+    span[data-lang="en"], a[data-lang="en"] { display:inline-block; }
+    @media (max-width:860px) {
+      .game-card { grid-template-columns:1fr; text-align:center; justify-items:center; }
+      .game-shot { max-width:440px; height:auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">NGD RETRO OVERDRIVE ANTHOLOGY</div>
+    <div class="lang-switch">
+      <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+      <button id="btn-hu" onclick="setLang('hu')">HU</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero">
+      <img class="hero-art" src="assets/hero_banner.jpg" alt="NGD Retro Overdrive 5-Game Arcade Collection Banner">
+      <div class="hero-body">
+        <h1 data-lang="en">NGD RETRO OVERDRIVE: 5-GAME BUNDLE</h1>
+        <h1 data-lang="hu">NGD RETRO OVERDRIVE: 5 JÁTÉKOS CSOMAG</h1>
+
+        <p class="lead" data-lang="en">Five golden-era 1981–1993 arcade &amp; home-computer genres reborn at silky 120Hz for Mac, iPhone, and iPad — each equipped with a live single-button 8-bit/16-bit Pixel &amp; Chiptune Time-Machine!</p>
+        <p class="lead" data-lang="hu">Öt legendás 1981–1993-as játéktermi és otthoni számítógépes műfaj selymes 120Hz-es újragondolásban Macre, iPhone-ra és iPadre — mindegyikben élő, egygombos 8/16-bites Pixel és Chiptune Időgéppel!</p>
+
+        <div class="price-banner">
+          <span class="price-now">$12.99 USD</span>
+          <span class="price-old">$34.95</span>
+          <span class="save-tag" data-lang="en">SAVE 63% &bull; $2.59 / GAME</span>
+          <span class="save-tag" data-lang="hu">63% KEDVEZMÉNY &bull; $2.59 / JÁTÉK</span>
+        </div>
+
+        <div class="pills">
+          <span class="pill" data-lang="en">5 Universal Purchases = 15 Native Apps (iPhone + iPad + Mac)</span>
+          <span class="pill" data-lang="hu">5 Univerzális Vásárlás = 15 Natív App (iPhone + iPad + Mac)</span>
+          <span class="pill" data-lang="en">Complete My Bundle Credit</span>
+          <span class="pill" data-lang="hu">Complete My Bundle Beszámítás</span>
+          <span class="pill" data-lang="en">Zero Ads &bull; Zero IAP &bull; 100% Offline</span>
+          <span class="pill" data-lang="hu">0 Reklám &bull; 0 Mikrotranzakció &bull; 100% Offline</span>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn-gold" data-lang="en" href="assets/NGD_RetroBundle_Catalog_EN.pdf">Download Printable A4 Catalog (EN PDF)</a>
+          <a class="btn btn-gold" data-lang="hu" href="assets/NGD_RetroBundle_Katalogus_HU.pdf">Nyomtatható A4 Katalógus Letöltése (HU PDF)</a>
+          <a class="btn btn-outline" href="mailto:gabor.d.nagy@gmail.com?subject=NGD%20Retro%20Overdrive%205-Game%20Press%20Inquiry">Press &amp; Creator Promo Codes</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" data-lang="en">All 5 Universal Titles Included</h2>
+    <h2 class="section-title" data-lang="hu">A Gyűjtemény Mind az 5 Univerzális Játéka</h2>
+
+    <div class="game-list">
+      <div class="game-card">
+        <img class="game-icon" src="assets/icon_star_viper.png" alt="Star Viper: Overdrive Icon">
+        <div class="game-meta">
+          <h3>#1 &mdash; Star Viper: Overdrive</h3>
+          <div class="era">1987 C64 Horizontal Cavern Shmup &bull; Live SID 6581 Synth</div>
+          <p data-lang="en">Pilot the needle-nosed Star Viper across 5 treacherous subterranean sectors: bomb fuel silos to stay airborne, thread laser gates, and shatter the alien dreadnought core!</p>
+          <p data-lang="hu">Vezesd a Star Viper vadászgépet 5 veszélyes földalatti szektoron át: bombázd az üzemanyag-tartályokat, száguldj át a lézerkapukon, és semmisítsd meg az idegen anyahajót!</p>
+          <div class="game-links">
+            <a href="../index.html">Storefront Page &rarr;</a>
+            <a href="https://github.com/ngdgabi/star-viper">GitHub Source &rarr;</a>
+          </div>
+        </div>
+        <img class="game-shot" src="assets/shot_01.png" alt="Star Viper Gameplay">
+      </div>
+
+      <div class="game-card">
+        <img class="game-icon" src="assets/icon_galaxy_swarm.png" alt="Galaxy Swarm: Overdrive Icon">
+        <div class="game-meta">
+          <h3>#2 &mdash; Galaxy Swarm: Overdrive</h3>
+          <div class="era">1981/1983 Twin-Star Formation Shooter &bull; Live SID/PSG Audio</div>
+          <p data-lang="en">Risk Graviton tractor beams to rescue your captured wingman and lock wings into a quad-laser Dual-Fighter across Challenge Nebulas and Solar Leviathan boss waves!</p>
+          <p data-lang="hu">Szabadítsd ki elfogott szárnysegédedet a vonósugárból, kapcsolódjatok össze négyszeres tűzerejű Dupla-Vadászgéppé, és győzd le a Solar Leviathan főellenséget!</p>
+          <div class="game-links">
+            <a href="../galaxy-swarm/">Storefront Page &rarr;</a>
+            <a href="https://github.com/ngdgabi/galaxy-swarm">GitHub Source &rarr;</a>
+          </div>
+        </div>
+        <img class="game-shot" src="assets/shot_02.jpg" alt="Galaxy Swarm Gameplay">
+      </div>
+
+      <div class="game-card">
+        <img class="game-icon" src="assets/icon_iron_rails.png" alt="Iron Rails: Blue & Gray Icon">
+        <div class="game-meta">
+          <h3>#3 &mdash; Iron Rails: Blue &amp; Gray</h3>
+          <div class="era">1989 Comic Railway Strategy &amp; Action &bull; Live C64 + SID Mode</div>
+          <p data-lang="en">Capture 1861–1864 continental railroads, blast wooden river bridges with range-gauge brass artillery, storm timber forts, and sprint across speeding bullion steam trains!</p>
+          <p data-lang="hu">Hódítsd meg az 1861–1864-es vasútvonalakat, lődd szét a folyami fahidakat rézágyúval, ostromolj erődöket, és rabolj száguldó aranyvonatot!</p>
+          <div class="game-links">
+            <a href="../iron-rails/">Storefront Page &rarr;</a>
+            <a href="https://github.com/ngdgabi/iron-rails">GitHub Source &rarr;</a>
+          </div>
+        </div>
+        <img class="game-shot" src="assets/shot_03.jpg" alt="Iron Rails Gameplay">
+      </div>
+
+      <div class="game-card">
+        <img class="game-icon" src="assets/icon_mirage_blade.png" alt="Mirage Blade: Hourglass Icon">
+        <div class="game-meta">
+          <h3>#4 &mdash; Mirage Blade: Hourglass</h3>
+          <div class="era">1989 Arabian Palace Dungeon &amp; Scimitar Fencing &bull; Live EGA + AdLib FM</div>
+          <p data-lang="en">Beat the 60-minute Golden Hourglass across 6 multi-room palace &amp; catacomb chapters! Tiptoe over spikes, dash guillotine jaws, merge with your Silver Mirror Phantom, and spark steel parries!</p>
+          <p data-lang="hu">Győzd le a 60 perces Arany Homokórát 6 többtermes palota- és katakombafejezeten át! Lopakodj át tüskéken, egyesülj tükörképeddel, és vívj pengeszikrázó szablyapárbajokat!</p>
+          <div class="game-links">
+            <a href="../mirage-blade/">Storefront Page &rarr;</a>
+            <a href="https://github.com/ngdgabi/mirage-blade">GitHub Source &rarr;</a>
+          </div>
+        </div>
+        <img class="game-shot" src="assets/shot_04.jpg" alt="Mirage Blade Gameplay">
+      </div>
+
+      <div class="game-card">
+        <img class="game-icon" src="assets/icon_dino_club.png" alt="Dino Club: Stone Age Feast Icon">
+        <div class="game-meta">
+          <h3>#5 &mdash; Dino Club: Stone Age Feast</h3>
+          <div class="era">1991/1993 Slapstick Caveman Platformer &bull; Live 16-Color VGA + AdLib FM</div>
+          <p data-lang="en">Swing your Oak Club &amp; Bone Hammer as Boga the Hungry Caveman! Ground-pound palm canopies to shake down secret Mega-Croissants, soar on a Hang-Glider, and bonk King Chomper T-Rex!</p>
+          <p data-lang="hu">Lendítsd Boga Tölgy Bunkóját és Csontpörölyét! Rázd le a titkos Óriás Croissant-okat a pálmafákról, siklórepülj vulkánok felett, és győzd le King Chomper T-Rexet!</p>
+          <div class="game-links">
+            <a href="../dino-club/">Storefront Page &rarr;</a>
+            <a href="https://github.com/ngdgabi/dino-club">GitHub Source &rarr;</a>
+          </div>
+        </div>
+        <img class="game-shot" src="assets/shot_05.jpg" alt="Dino Club Gameplay">
+      </div>
+    </div>
+
+    <div class="value-grid">
+      <div class="vbox">
+        <h4 data-lang="en">Apple Complete My Bundle</h4>
+        <h4 data-lang="hu">Complete My Bundle Árbeszámítás</h4>
+        <p data-lang="en">Already bought Star Viper or Iron Rails? The App Store automatically deducts what you paid so upgrading to all 5 games costs only the tiny remainder!</p>
+        <p data-lang="hu">Megvetted már valamelyik epizódot? Az App Store automatikusan levonja a már kifizetett összeget a $12.99-es csomagárból!</p>
+      </div>
+      <div class="vbox">
+        <h4 data-lang="en">True Universal Ownership</h4>
+        <h4 data-lang="hu">Valódi Univerzális Tulajdon</h4>
+        <p data-lang="en">Every single title unlocks natively on macOS (Apple Silicon + Intel), iPhone, and iPad with PS5 DualSense, Xbox &amp; MFi Bluetooth gamepad support.</p>
+        <p data-lang="hu">Mind az 5 játék egyszerre oldódik fel Macen, iPhone-on és iPaden, natív PS5 DualSense, Xbox és MFi kontroller támogatással.</p>
+      </div>
+      <div class="vbox">
+        <h4 data-lang="en">Pure Retro Craftsmanship</h4>
+        <h4 data-lang="hu">100% Tiszta Prémium Élmény</h4>
+        <p data-lang="en">Zero banner ads, zero energy timers, zero microtransactions, zero tracking SDKs, and tiny ~2 MB native Swift + SpriteKit + AVAudioEngine binaries.</p>
+        <p data-lang="hu">Nulla reklám, nulla mikrotranzakció, nulla adatgyűjtés — villámgyors, ~2 MB-os natív Swift + SpriteKit + valós idejű chiptune szintetizátor motor.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 NGD (Gabor Daniel Nagy) &bull; <a href="../index.html">Star Viper</a> &bull; <a href="../galaxy-swarm/">Galaxy Swarm</a> &bull; <a href="../iron-rails/">Iron Rails</a> &bull; <a href="../mirage-blade/">Mirage Blade</a> &bull; <a href="../dino-club/">Dino Club</a> &bull; <a href="mailto:gabor.d.nagy@gmail.com">Contact</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(l) {
+      document.body.classList.toggle('hu', l === 'hu');
+      document.getElementById('btn-en').classList.toggle('active', l === 'en');
+      document.getElementById('btn-hu').classList.toggle('active', l === 'hu');
+    }
+    if ((navigator.language || '').toLowerCase().startsWith('hu')) { setLang('hu'); }
+  </script>
+</body>
+</html>
